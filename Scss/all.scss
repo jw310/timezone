@@ -1,0 +1,55 @@
+*{
+	box-sizing: border-box;  //這個元素的內距和邊框將不會增加元素本身的寬度
+}
+
+body {
+    text-transform: uppercase; 
+    background: #E5E5E5;
+    display: flex;     
+	align-items: center;
+	justify-content: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.wrap{
+    width: 540px;
+}
+
+.note {
+    font-size: 60px;
+    font-weight: bold;
+    padding: 5px 0;
+	margin: 25px 0;
+	line-height: 72px; 
+    text-align: center; 
+    border-top: 10px solid #000;
+    border-bottom: 10px solid #000;
+}
+
+.timezone {
+    position: relative;  // 相對照著瀏覽器預設的配置自動排版
+
+}
+
+.zone {
+    position: absolute;  // 絕對定位，便可以將元素放在文檔中任何想放的位置。
+	left: 40px;
+    opacity: 1;
+    .area{
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 49px;
+    }
+    .date{
+        position: absolute;
+        top: 40px;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 16px;
+    }
+}
+
+.time {
+    font-size: 40px;
+    text-align: right;
+}
